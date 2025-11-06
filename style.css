@@ -16,6 +16,11 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
+
+form h2 {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     color: #005a9c;
@@ -33,7 +38,7 @@ h1 {
 
 form {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; 
     gap: 15px;
     margin-bottom: 25px;
     border-bottom: 1px solid #eee;
@@ -43,14 +48,16 @@ form {
 
 @media (min-width: 768px) {
     form {
-        grid-template-columns: 1fr 1fr;
+        
     }
 
-    form div:nth-child(5), 
-    form div:nth-child(4) { 
+   
+    #formContato div:nth-of-type(3) {
         grid-column: 1 / -1;
     }
 }
+
+
 
 form div {
     display: flex;
